@@ -1,16 +1,16 @@
-﻿using HoteliAPI.Models;
+﻿using HotelAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace HoteliAPITests
+namespace HotelAPITests
 {
     public static class Utility
     {
-        private static readonly string connectionString = "Server=DESKTOP-RGHHS6S;Database=HoteliTest;Trusted_Connection=True;";
+        private static readonly string connectionString = "Server=MyServerNam;Database=HotelsTest;Trusted_Connection=True;";
 
-        public static HoteliContext GetDbContext()
+        public static HotelsContext GetDbContext()
         {
-            var optionsBuilder = new DbContextOptionsBuilder<HoteliContext>().UseSqlServer(connectionString);
-            return new HoteliContext(optionsBuilder.Options);
+            var optionsBuilder = new DbContextOptionsBuilder<HotelsContext>().UseSqlServer(connectionString);
+            return new HotelsContext(optionsBuilder.Options);
         }
     }
 }

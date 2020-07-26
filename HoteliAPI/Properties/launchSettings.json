@@ -12,15 +12,15 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/gost",
+      "launchUrl": "api/Guest",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "HoteliAPI": {
+    "HotelsAPI": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/gost",
+      "launchUrl": "api/Guest",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

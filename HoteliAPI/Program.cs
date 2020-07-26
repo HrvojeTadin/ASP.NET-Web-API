@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace HoteliAPI
+namespace HotelAPI
 {
     public class Program
     {

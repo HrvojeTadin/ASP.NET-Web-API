@@ -13,12 +13,12 @@
     <PackageReference Include="MSTest.TestFramework" Version="2.1.1" />
     <PackageReference Include="coverlet.collector" Version="1.2.1">
       <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <IncludeAssets>runtName; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HoteliAPI\HoteliAPI.csproj" />
+    <ProjectReference Include="..\HoteliAPI\HotelAPI.csproj" />
   </ItemGroup>
 
 </Project>

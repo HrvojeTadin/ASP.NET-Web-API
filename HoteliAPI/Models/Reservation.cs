@@ -1,22 +1,22 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace HoteliAPI.Models
+namespace HotelAPI.Models
 {
-    public partial class Rezervacija
+    public partial class Reservation
     {
         public Guid Id { get; set; }
         [Required, DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy HH:mm:ss}")]
-        public DateTime DatumOd { get; set; }
+        public DateTime DateFrom { get; set; }
         [Required, DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy HH:mm:ss}")]
-        public DateTime DatumDo { get; set; }
-        public int Aktivna { get; set; }
-        public Guid GostId { get; set; }
-        public Guid VoditeljId { get; set; }
-        public Guid SobaId { get; set; }
+        public DateTime DateTo { get; set; }
+        public int IsActive { get; set; }
+        public Guid GuestId { get; set; }
+        public Guid HotelManagerId { get; set; }
+        public Guid RoomId { get; set; }
         [StringLength(11)]
-        public string Sifra { get; set; }
+        public string PIN { get; set; }
     }
 }
